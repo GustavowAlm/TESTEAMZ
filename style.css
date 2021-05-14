@@ -1,0 +1,404 @@
+body{
+  background-color: rgb(251, 248, 248);
+}
+
+/* Cabeçalho */
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(#2bb889, #3c9a8d, #6adbed);
+    color: white;
+    font-size: 20px;
+   
+ 
+  }
+
+
+
+p{
+    color: rgb(55, 54, 54);
+    font-family: fantasy;
+}  
+
+h3{
+  float: right;
+  font-size: 14px;
+  margin-top: -50px;
+  color: black;
+}
+
+
+
+/* Menu */
+
+  #menu-nav {
+   
+    position:flex;
+    margin-top: -16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #2ab1aa;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(244, 244, 244, 0.3);
+
+  }
+   
+  #navigation-bar ul {
+    overflow: hidden;
+  }
+  #navigation-bar li {
+    float: left;
+    width: 15%;
+  }
+  #navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+  #navigation-bar a {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  #navigation-bar a:hover {
+    color: #0d7f87;
+  }
+  #navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #3fa1ac;
+  }
+  #navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+  }
+   
+  li {
+   list-style: none;
+ 
+
+  }
+
+  /*Vantagens */
+
+  section{
+    background-image: linear-gradient(#21b09d, #ffffff77);
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  section h1 a:hover {
+    color: rgb(2, 2, 2);
+   
+  }
+  
+
+section h1 a{
+  color:#ffffff;
+  margin-top:-15px;
+  font-size: 60px;
+  font-family: fantasy;
+  text-decoration:none; 
+  
+
+}
+
+section h2{
+  color:white;
+  text-align: left;
+  margin-top: -40px;
+  font-size: 25px;
+  font-family: Arial;
+ 
+  
+
+}
+
+section p{
+font-size: 19px;
+font-family: Arial;
+margin-top: -90px;
+margin-left: 70px;
+
+}
+
+/* Visão do cliente */
+
+#visao{
+  background-image: linear-gradient(#21b09d,#ffffff77);
+  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  
+}
+
+#visao h1 a{
+  color:#ffffff;
+}
+
+#visao h1 a:hover {
+  color: rgb(2, 2, 2);
+ 
+}
+
+/* Imagens Visão */
+
+ .logo2{
+  float:right;
+}
+
+#visao p{
+  font-size: 19px;
+  font-family: Arial;
+  margin-top: -300px;
+  margin-left:290px;
+  
+}
+
+
+/* Como funciona */
+
+#funciona h3{
+  color:#1694a7;
+  font-size: 20px;
+  font-family: fantasy;
+  padding-top: 60px;
+  float: left;
+  text-transform: uppercase;
+}
+
+#funciona p{
+  padding-top: 150px;
+  margin-left: -2px;
+}
+
+
+
+/* #funciona img{
+  margin-top: -330px;
+  float:right;
+  margin-right: 0px;
+
+} */
+
+/* Botão */
+
+
+.text-box {
+  float:left;
+
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: rgb(16, 59, 91);
+  color: rgb(255, 255, 255);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+/* Preços */
+
+#container {
+  width: 100%;
+  border-color: rgb(0, 0, 1);
+  text-align: center;
+}
+
+#container h2{
+  color:rgb(249, 239, 239);
+  margin-top: 10px;
+  margin-left: 90px;
+  font-family: fantasy;
+}
+
+#container p{
+  color:rgb(249, 239, 239);
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: fantasy;
+}
+
+.text-box1 {
+ 
+  margin-left: -170px;
+
+
+}
+
+
+.box {
+  float: left;
+  width: 300px; height: 470px;
+  margin: 10px 20px;
+  box-shadow: -1px -1px 1px #325d6f, 1px 1px 1px #0d0f10;
+-webkit-box-shadow: -1px -1px 1px #ffffff, 5px 3px 2px #676a6c;
+
+}
+
+
+#box-1 {   background-image: linear-gradient(#21b09d, #ffffff77); }
+#box-2 {   background-image: linear-gradient(#21b09d, #ffffff77); }
+#box-3 {   background-image: linear-gradient(#21b09d, #ffffff77); }
+
+
+/* Código */
+
+#resgatar div{
+
+  margin-top: 600px;
+  margin-left: -100px;
+  margin-right:-100px;
+  height: 90px;
+  background-color: #60ecc2c6;
+  box-shadow: -1px -1px 1px #325d6f, 1px 1px 1px #0d0f10;
+  -webkit-box-shadow: -1px -1px 1px #ffffff, 5px 3px 2px #676a6c;
+  padding-bottom: 10px;
+}
+
+#resgatar h2{
+  font-family: fantasy;
+  text-align: center;
+  color: rgb(255, 252, 252);
+}
+
+#resgatar input{
+  background-color: rgba(255, 255, 255, 0.681);
+  padding:5px ;
+  margin-left: 0px;
+}
+
+#resgatar label{
+  text-transform: uppercase;
+  font-family: fantasy;
+  margin-left: 480px;
+}
+
+
+/* Formulário */
+
+
+form{
+  font-size: 20px;
+  background-image: linear-gradient(#21b09d, #ffffff77);
+  margin: 0 auto;
+  margin-top: -40px;
+  
+  }
+  
+  h1{
+  color: #ffffff;
+  text-align: center;
+  font-family: fantasy;
+  }
+  
+  input, textarea{
+  width: 474px;
+  padding: 10px;
+  
+  }
+  
+  .enviar input {
+  background-color: rgb(34, 104, 138);
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  color: #FFF;
+  cursor: pointer;
+  }
+  
+  .enviar input:hover{
+  background: rgb(80, 207, 227);
+  }
+  
+  textarea {
+  width: 474px;
+  height: 120px;
+  line-height: 20px;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 40px;
+    left: 0;
+    bottom: 0;
+    background-color: #b2b2b2;
+    color: white;
+    text-align: center;
+  }
+
